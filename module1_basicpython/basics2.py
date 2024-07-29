@@ -21,6 +21,7 @@
 # rain - Monsoon season
 # anything else - Wrong input
 
+# Condition
 # a=input()
 # if a=="sunny":
 #     print("summer")
@@ -38,5 +39,7 @@ print(a, "is a number")
 print(str(a)+ " is a number")
 print(f"{a} is a number")
 
-# Condition
+
+
+
 # Loop
