@@ -80,8 +80,10 @@
 # Triple Quote - Sentence/paragrapd
 
 # Assignment Use both the loops and print the even values from 40 to 0
-i=40
-while(i>=0):
-    if(i%2==0):
-        print(i, end=" ")
-    i-=1
+# i=40
+# while(i>=0):
+#     if(i%2==0):
+#         print(i, end=" ")
+#     i-=1
+for i in range(40, 0, -2):
+    print(i, end=" ")
