@@ -87,3 +87,15 @@
 #     i-=1
 for i in range(40, 0, -2):
     print(i, end=" ")
+
+
+# important components Function, Variable
+# Python File Module
+# Library = Multiple modules
+# Package = Collection of multiple libraries
+
+
+# User defined Library
+# Numpy (Numerical Computation with Arrays)
+# - Matplotlib ( Data Visualization)
+# Pandas (Data Manipulation/ Data Preprocessing)
