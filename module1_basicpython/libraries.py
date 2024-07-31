@@ -80,3 +80,4 @@ import math
 #     i = (i-np.min(a))/(np.max(a)-np.min(a))
 #     print(i)
 
+ 
