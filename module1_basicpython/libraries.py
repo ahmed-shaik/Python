@@ -69,15 +69,28 @@ import math
 # Matrix Multiplication (Dot Product)
 # Mean Squared Error
 
-# Euclidean Distance
-# a = np.array([4,5])
-# b = np.array([8,6])
-# print(math.sqrt((a[1]-a[0])*(a[1]-a[0])+(b[1]-b[0])*(b[1]-b[0])))
+# # Euclidean Distance
+# a = np.array([[1,2,3],[4,5,6]])
+# b = np.array([[7, 8], [9, 10],[11, 12]])
+# # print(math.sqrt((a[1]-a[0])*(a[1]-a[0])+(b[1]-b[0])*(b[1]-b[0])))
+# print(np.sqrt(np.sum(np.square(np.subtract(a,b)))))
 
 # Normalization using Min Max Scalar
 # a = np.array([6,5,78,153,89])
 # for i in a:
 #     i = (i-np.min(a))/(np.max(a)-np.min(a))
 #     print(i)
-
+    
  
+# #Matrix Multiplication (Dot Product)
+# print(np.dot(a,b))
+
+# Mean Squared Error
+y_pred = np. array( [110, 220, 330] )
+y_real = np. array( [100, 200, 300] )
+
+error = np.subtract(y_pred, y_real)
+sq = np.square(error)
+mse = np.mean(sq)
+
+print('Mean Squared Error:', mse)
