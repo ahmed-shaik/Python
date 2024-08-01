@@ -85,13 +85,36 @@ import math
 # #Matrix Multiplication (Dot Product)
 # print(np.dot(a,b))
 
-# Mean Squared Error
-y_pred = np. array( [110, 220, 330] )
-y_real = np. array( [100, 200, 300] )
+# # Mean Squared Error
+# y_pred = np. array( [110, 220, 330] )
+# y_real = np. array( [100, 200, 300] )
 
-error = np.subtract(y_pred, y_real)
-sq = np.square(error)
-mse = np.mean(sq)
+# error = np.subtract(y_pred, y_real)
+# sq = np.square(error)
+# mse = np.mean(sq)
 
-print('Mean Squared Error:', mse)
+# print('Mean Squared Error:', mse)
 
+#Data Visualization using Matplotlib
+
+# Graphs
+# 1.Line PLot
+# 2.Scatter Plot
+# 3.Bar Graph
+# 4.Pie Chart - Assignment
+# 5.Histogram
+# 6.Density Kernel
+
+import matplotlib.pyplot as plt
+x = np.array([322,34,25])
+y = np.array([6,83,130])
+plt.plot(x,y, color='red')
+plt.xlim(0, 350) #graph starts from 0 to 350
+plt.ylim(0, 200)
+for i in range(len(x)):
+    plt.text(x[i], y[i], (x[i], y[i]))
+    i+=1
+plt.xlabel("x-label")
+plt.ylabel("y-axis")
+plt.title("Line Graph")
+plt.show()
