@@ -94,3 +94,4 @@ sq = np.square(error)
 mse = np.mean(sq)
 
 print('Mean Squared Error:', mse)
+
