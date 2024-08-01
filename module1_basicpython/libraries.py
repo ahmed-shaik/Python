@@ -105,16 +105,111 @@ import math
 # 5.Histogram
 # 6.Density Kernel
 
+# import matplotlib.pyplot as plt
+# x = np.array([322,34,25])
+# y = np.array([6,83,130])
+# plt.plot(x,y, c='red', ls="--", lw=2, marker="*", mfc=3)
+# plt.xlim(0, 350) #graph starts from 0 to 350
+# plt.ylim(0, 200)
+# for i in range(len(x)):
+#     plt.text(x[i], y[i], (x[i], y[i]))
+#     i+=1
+# plt.xlabel("x-label")
+# plt.ylabel("y-axis")
+# plt.title("Line Graph")
+# plt.show()
+
+#list of `.Line2D`
+#     A list of lines representing the plotted data.
+
+# Other Parameters
+# ----------------
+# scalex, scaley : bool, default: True
+#     These parameters determine if the view limits are adapted to the
+#     data limits. The values are passed on to
+#     `~.axes.Axes.autoscale_view`.
+
+# **kwargs : `.Line2D` properties, optional
+#     *kwargs* are used to specify properties like a line label (for
+#     auto legends), linewidth, antialiasing, marker face color.
+#     Example::
+
+#     >>> plot([1, 2, 3], [1, 2, 3], 'go-', label='line 1', linewidth=2)
+#     >>> plot([1, 2, 3], [1, 4, 9], 'rs', label='line 2')
+
+#     If you specify multiple lines with one plot call, the kwargs apply
+#     to all those lines. In case the label object is iterable, each
+#     element is used as labels for each set of data.
+
+#     Here is a list of available `.Line2D` properties:
+
+#     Properties:
+#     agg_filter: a filter function, which takes a (m, n, 3) float array and a dpi value, and returns a (m, n, 3) array and two offsets from the bottom left corner of the image
+#     alpha: scalar or None
+#     animated: bool
+#     antialiased or aa: bool
+#     clip_box: `.Bbox`
+#     clip_on: bool
+#     clip_path: Patch or (Path, Transform) or None
+#     color or c: color
+#     dash_capstyle: `.CapStyle` or {'butt', 'projecting', 'round'}
+#     dash_joinstyle: `.JoinStyle` or {'miter', 'round', 'bevel'}
+#     dashes: sequence of floats (on/off ink in points) or (None, None)
+#     data: (2, N) array or two 1D arrays
+#     drawstyle or ds: {'default', 'steps', 'steps-pre', 'steps-mid', 'steps-post'}, default: 'default'
+#     figure: `.Figure`
+#     fillstyle: {'full', 'left', 'right', 'bottom', 'top', 'none'}
+#     gapcolor: color or None
+#     gid: str
+#     in_layout: bool
+#     label: object
+#     linestyle or ls: {'-', '--', '-.', ':', '', (offset, on-off-seq), ...}
+#     linewidth or lw: float
+#     marker: marker style string, `~.path.Path` or `~.markers.MarkerStyle`
+#     markeredgecolor or mec: color
+#     markeredgewidth or mew: float
+#     markerfacecolor or mfc: color
+#     markerfacecoloralt or mfcalt: color
+#     markersize or ms: float
+#     markevery: None or int or (int, int) or slice or list[int] or float or (float, float) or list[bool]
+#     mouseover: bool
+#     path_effects: `.AbstractPathEffect`
+#     picker: float or callable[[Artist, Event], tuple[bool, dict]]
+#     pickradius: unknown
+#     rasterized: bool
+#     sketch_params: (scale: float, length: float, randomness: float)
+#     snap: bool or None
+#     solid_capstyle: `.CapStyle` or {'butt', 'projecting', 'round'}
+#     solid_joinstyle: `.JoinStyle` or {'miter', 'round', 'bevel'}
+#     transform: unknown
+#     url: str
+#     visible: bool
+#     xdata: 1D array
+#     ydata: 1D array
+#     zorder: float
+
+
+
+#Line Plot is used ill Regression Analysis, Forecasting, Trend Analysis
+# Scatter Plot: Line Plot with Marker but without a linel
+
 import matplotlib.pyplot as plt
-x = np.array([322,34,25])
-y = np.array([6,83,130])
-plt.plot(x,y, color='red')
-plt.xlim(0, 350) #graph starts from 0 to 350
-plt.ylim(0, 200)
-for i in range(len(x)):
-    plt.text(x[i], y[i], (x[i], y[i]))
-    i+=1
-plt.xlabel("x-label")
-plt.ylabel("y-axis")
-plt.title("Line Graph")
+import numpy as np
+# # x= np.arange(1,6)
+# # z = np.power(x,3)
+# # plt.scatter(x,z,color='g', marker='+', label='Cube')
+# # plt.legend()
+# plt.show()
+
+# Bar Graph
+# Create a Numpy array named person and put 4 people names in that
+# Create another array with respective heights of those people
+
+person= np.array(['a', 'b', 'c', 'd'])
+height = np.array([142,154,134, 153])
+width = np.array([45, 56, 35, 46])
+plt.bar(person,height, width=0.4, align='edge')
+plt.bar(person, width, width=-0.4, align='edge')
+plt.xlabel( ' Person')
+plt.ylabel( 'Heightl' )
 plt.show()
