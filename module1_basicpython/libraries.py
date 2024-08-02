@@ -205,11 +205,17 @@ import numpy as np
 # Create a Numpy array named person and put 4 people names in that
 # Create another array with respective heights of those people
 
-person= np.array(['a', 'b', 'c', 'd'])
-height = np.array([142,154,134, 153])
-width = np.array([45, 56, 35, 46])
-plt.bar(person,height, width=0.4, align='edge')
-plt.bar(person, width, width=-0.4, align='edge')
-plt.xlabel( 'Person')
-plt.ylabel( 'Height' )
+# person= np.array(['a', 'b', 'c', 'd'])
+# height = np.array([142,154,134, 153])
+# width = np.array([45, 56, 35, 46])
+# plt.bar(person,height, width=0.4, align='edge')
+# plt.bar(person, width, width=-0.4, align='edge')
+# plt.xlabel( 'Person')
+# plt.ylabel( 'Height' )
+# plt.show()
+
+#Pie chart
+c = ['Mumbai', 'Bangalore', 'Punei', 'Mysore']
+s = [1234, 3222, 42422, 5343]
+plt.pie(s, labels=c, explode=[0, 0, 0.1, 0],autopct='%.2f%%')
 plt.show()
