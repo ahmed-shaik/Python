@@ -219,3 +219,4 @@ c = ['Mumbai', 'Bangalore', 'Punei', 'Mysore']
 s = [1234, 3222, 42422, 5343]
 plt.pie(s, labels=c, explode=[0, 0, 0.1, 0],autopct='%.2f%%')
 plt.show()
+
