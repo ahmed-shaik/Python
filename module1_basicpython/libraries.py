@@ -215,8 +215,14 @@ import numpy as np
 # plt.show()
 
 #Pie chart
-c = ['Mumbai', 'Bangalore', 'Punei', 'Mysore']
-s = [1234, 3222, 42422, 5343]
-plt.pie(s, labels=c, explode=[0, 0, 0.1, 0],autopct='%.2f%%')
-plt.show()
+# c = ['Mumbai', 'Bangalore', 'Punei', 'Mysore']
+# s = [1234, 3222, 42422, 5343]
+# plt.pie(s, labels=c, explode=[0, 0, 0.1, 0],autopct='%.2f%%')
+# plt.show()
 
+#Seaborn pacakage
+import seaborn as sns
+age = np.random.randint(1, 100, 30)
+sns.histplot(age, bins=[0, 10, 20, 30 ,40 ,50 ,60 ,70, 80, 90, 100], kde=True)
+# sns.kdeplot(age)
+plt.show()
