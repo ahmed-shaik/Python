@@ -23,6 +23,7 @@ y = df.iloc[:,1].values
 reg=LinearRegression().fit(x, y)
 print(reg.coef_)
 
+
 # PLotting the best fit line
 y_pred = reg.predict(x)
 plt.scatter(df['YearsExperience'] , df['Salary'])
