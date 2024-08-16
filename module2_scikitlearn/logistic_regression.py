@@ -9,5 +9,6 @@ df = pd.read_csv('C:\\Users\\ahmed\\Downloads\\Social_Network_Ads.csv')
 
 p_df = df[df['Purchased']==1]
 np_df = df[df['Purchased']==0]
-print(p_df.head())
-print(np_df.head())
+plt.scatter(p_df['Age'], p_df['EstimatedSalary'])
+plt.scatter(np_df['Age'], np_df['EstimatedSalary'])
+plt.show()
